@@ -8,5 +8,11 @@
   - More info: https://xotelo.com/how-to-get-hotel-key.html
 3. run the script, itll only update 1x a day
 
+## Dependencies
+`pip install pandas`
+`pip install datetime`
+`pip install requests`
+
+
 ## Credits
 Built with https://xotelo.com/ API
