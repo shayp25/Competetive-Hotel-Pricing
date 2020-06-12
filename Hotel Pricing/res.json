@@ -1,0 +1,12 @@
+{"result": {"chk_in": "2020-06-11", "chk_out": "2020-06-12", "currency": "USD", "rates": [
+            {"code": "Expedia", "name": "Expedia", "rate": 79.0, "tax": 10.0
+            },
+            {"code": "HotelsCom2", "name": "Hotels.com", "rate": 79.0, "tax": 10.0
+            },
+            {"code": "BookingCom", "name": "Booking.com", "rate": 79.0, "tax": 10.0
+            },
+            {"code": "Agoda", "name": "Agoda.com", "rate": 79.0, "tax": 10.0
+            },
+            {"code": "HotelsCom2IB", "name": "Tripadvisor", "rate": 79.0, "tax": 10.0
+            }
+        ], "hotel_url": "http: //www.tripadvisor.com/Hotel_Review-g30155-d1390563-Reviews-La_Quinta_Inn_Suites_by_Wyndham_Allen_at_the_Village-Allen_Texas.html"}, "error": "None", "timestamp": 1591886129.443988, "message": "Please support me on https://xotelo.com/donate.html"}
