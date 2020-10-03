@@ -4,12 +4,12 @@ import pandas as pd
 
 
 def cost(hotel_key):
-    url = "https://data.xotelo.com/api/rates?hotel_key="+hotel_key+"&chk_in=" + dateString + "&chk_out="+((date+timedelta(days=1)).strftime("%Y-%m-%d"))
+    url = "https://data.xotelo.com/api/rates?hotel_key="+hotel_key+"&chk_in=" + dateString.strftime("%Y-%m-%d") + "&chk_out="+((date+timedelta(days=1)).strftime("%Y-%m-%d"))
     res = requests.get(url)
 
     data = res.json()['result']['rates']
     minCost  = min(data, key=(lambda site: site['rate']))
-    minCost = minCost['rate'] +minCost['tax']
+    minCost = minCost['rate']
     return int(minCost)
 
     #!use res for testing as res.json
@@ -18,7 +18,7 @@ def cost(hotel_key):
 
 date = (datetime.today())
 df = pd.read_csv('Hotel Pricing/prices.csv',delimiter=',')
-dateString = date.strftime("%Y-%m-%d")
+dateString = date#.strftime("%Y-%m-%d")
 df[dateString]=" "
 
 for index, row in df.iterrows():
