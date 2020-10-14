@@ -2,7 +2,7 @@ import requests
 from datetime import datetime,timedelta
 import pandas as pd
 
-
+#new comment
 def cost(hotel_key):
     url = "https://data.xotelo.com/api/rates?hotel_key="+hotel_key+"&chk_in=" + dateString.strftime("%Y-%m-%d") + "&chk_out="+((date+timedelta(days=1)).strftime("%Y-%m-%d"))
     res = requests.get(url)
